@@ -33,7 +33,7 @@ class ActionCentre extends React.Component {
                     <i className="fas fa-bell"></i>
                 </button>
                 <button className="row-span-1 col-span-1 lg:col-span-1 lg:row-span-1 h-12 rounded-md flex flex-row items-center justify-center">
-                    <img src={ProfilePicture} className="" />
+                    <img src={ProfilePicture} />
                 </button>
                 <div className="row-span-2 col-span-1 lg:row-span-2 lg:col-span-3 bg-gray-100 rounded-md flex flex-row">
                     <span className="block flex flex-row items-center justify-center w-1/2 font-baloo font-semibold text-4xl">
