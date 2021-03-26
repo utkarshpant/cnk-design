@@ -81,7 +81,7 @@ function App() {
 		// 		</div>
 		// 	</div>
 		// </div>
-		<div className="App h-screen flex flex-col lg:flex-row">
+		<div className="App min-h-screen flex flex-col lg:flex-row flex-grow">
 			<div className="SidebarCol lg:w-1/6 flex flex-col lg:p-4 items-center overflow-visible">
 				<div className="Sidebar w-full lg:w-2/3 h-full lg:m-2 gap-2 lg:rounded-2xl lg:top-0 bg-black text-white flex flex-col items-center justify-between p-4">
 					<div className="logo w-8 h-1/6 m-4 flex flex-col justify-center items-center">
@@ -97,13 +97,13 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<div className="Content lg:w-5/6 flex flex-col-reverse lg:flex-row p-10 gap-10 lg:overflow-y-auto">
-				<div className="Hero flex flex-col lg:col-span-3 gap-4">
+			<div className="Content flex-grow lg:w-5/6 flex flex-col-reverse lg:flex-row p-10 gap-10 lg:overflow-y-auto">
+				<div className="Hero min-h-screen flex flex-col lg:col-span-3 gap-4">
 					<HeroGreeting />
 					<ActiveCourse courses={courseList}/>
 					<CourseList courses={courseList}/>
 				</div>
-				<div className="Secondary lg:col-span-2 flex flex-col gap-8">
+				<div className="Secondary flex-grow lg:col-span-2 flex flex-col gap-8">
 					<ActionCentre courses={courseList}/>
 					<img src={StatisticsImage} />
 					<div className="h-48 bg-gray-100 w-full rounded-md flex flex-row items-center gap-1 p-2">
